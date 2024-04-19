@@ -1,0 +1,21 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioController">
+			<method name="Button1Clicked"/>
+			<method name="Button3Clicked"/>
+		</type>
+		<type fullname="DartScoreSystem">
+			<method name="ResetScore"/>
+		</type>
+		<type fullname="LightingController">
+			<method name="Button1Clicked"/>
+			<method name="Button2Clicked"/>
+			<method name="Button3Clicked"/>
+		</type>
+		<type fullname="VideoPlayerController">
+			<method name="OnMouseEnterQuad"/>
+			<method name="OnMouseExitQuad"/>
+			<method name="PlayVideo"/>
+		</type>
+	</assembly>
+</linker>
