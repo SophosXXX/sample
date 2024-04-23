@@ -31,12 +31,12 @@ public class PickedUp : MonoBehaviour
 
             Freeze();
 
-            if(Input.GetButton("js5"))
+            if(Input.GetButtonDown("js5"))
             {
                 transform.SetParent(null);
                 rb.useGravity = true;
 
-                rb.AddForce(Ray.transform.forward * force);
+                rb.AddForce(Ray.transform.up * force);
                 pickedUp = false;
 
                 // GetComponent<BoxCollider>().enabled = true;

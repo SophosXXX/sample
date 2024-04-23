@@ -54,6 +54,8 @@ public class VideoPlayerController : MonoBehaviourPunCallbacks
             videoPlayer.clip = clipToPlay;
             videoPlayer.Play();
         }
+        isCanvasVisible = !isCanvasVisible;
+        uiCanvas.gameObject.SetActive(isCanvasVisible);
     }
 
     [PunRPC]
