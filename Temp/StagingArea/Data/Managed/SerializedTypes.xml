@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="MouseLookHelper" preserve="nothing" serialized="true"/>
 		<type fullname="UnityFloatEvent" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="PhotonRealtime">
@@ -8,6 +9,18 @@
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedLayer" preserve="nothing" serialized="true"/>
 		<type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedParameter" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="PhotonVoice.API">
+		<type fullname="Photon.Voice.AudioOutDelayControl/PlayDelayConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Photon.Voice.IOS.AudioSessionParameters" preserve="nothing" serialized="true"/>
+		<type fullname="Photon.Voice.Unity.AndroidAudioInParameters" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Unity.InputSystem">
+		<type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.InputSystem.InputControlScheme/DeviceRequirement" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.Postprocessing.Runtime">
 		<type fullname="UnityEngine.Rendering.PostProcessing.BoolParameter" preserve="nothing" serialized="true"/>

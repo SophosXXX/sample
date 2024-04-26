@@ -2,10 +2,18 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="AudioController" preserve="nothing"/>
 		<type fullname="AvatarLookAt" preserve="nothing"/>
+		<type fullname="ButtonInvoker" preserve="nothing"/>
 		<type fullname="CardboardStartup" preserve="nothing"/>
+		<type fullname="ChangeColor" preserve="nothing"/>
+		<type fullname="ChangeName" preserve="nothing"/>
 		<type fullname="CharacterMovement" preserve="nothing"/>
 		<type fullname="CubeColorController" preserve="nothing"/>
+		<type fullname="CustomTeleporter" preserve="nothing"/>
 		<type fullname="DartScoreSystem" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.FirstPersonController" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.Highlighter" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.OrthographicController" preserve="nothing"/>
+		<type fullname="ExitGames.Demos.DemoPunVoice.ThirdPersonController" preserve="nothing"/>
 		<type fullname="HealthManager" preserve="nothing"/>
 		<type fullname="HydrationManager" preserve="nothing"/>
 		<type fullname="LightingController" preserve="nothing"/>
@@ -13,8 +21,11 @@
 		<type fullname="Outline" preserve="nothing"/>
 		<type fullname="PickedUp" preserve="nothing"/>
 		<type fullname="PlayerSetup" preserve="nothing"/>
+		<type fullname="PointersController" preserve="nothing"/>
+		<type fullname="ProximityVoiceTrigger" preserve="nothing"/>
 		<type fullname="RayCastPointer" preserve="nothing"/>
 		<type fullname="RoomManager" preserve="nothing"/>
+		<type fullname="StartGameButton" preserve="nothing"/>
 		<type fullname="ThrowDart" preserve="nothing"/>
 		<type fullname="VideoPlayerController" preserve="nothing"/>
 		<type fullname="XRCardboardController" preserve="nothing"/>
@@ -42,6 +53,26 @@
 		<type fullname="Photon.Pun.PhotonTransformView" preserve="nothing"/>
 		<type fullname="Photon.Pun.PhotonView" preserve="nothing"/>
 		<type fullname="Photon.Pun.ServerSettings" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonUnityNetworking.Utilities">
+		<type fullname="Photon.Pun.UtilityScripts.MoveByKeys" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonVoice">
+		<type fullname="Photon.Voice.Unity.Recorder" preserve="nothing"/>
+		<type fullname="Photon.Voice.Unity.Speaker" preserve="nothing"/>
+		<type fullname="Photon.Voice.Unity.VoiceLogger" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonVoice.PUN">
+		<type fullname="Photon.Voice.PUN.PhotonVoiceView" preserve="nothing"/>
+		<type fullname="Photon.Voice.PUN.PunVoiceClient" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.InputSystem">
+		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.InputActionReference" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.Postprocessing.Runtime">
 		<type fullname="UnityEngine.Rendering.PostProcessing.Bloom" preserve="nothing"/>
@@ -75,6 +106,7 @@
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
+		<type fullname="UnityEngine.AnimatorOverrideController" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
@@ -138,6 +170,7 @@
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Shadow" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>

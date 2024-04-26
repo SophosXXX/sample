@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 718274b6-c361-4bab-8bb6-dc3f4fdca19e
+    AppIdRealtime: 01ec4264-0ceb-467e-abfb-a9133642c05c
     AppIdFusion: 
     AppIdChat: 
-    AppIdVoice: 
+    AppIdVoice: 97809cbb-1ece-40e8-a816-a7a0c70250b6
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
@@ -34,18 +34,18 @@ MonoBehaviour:
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList:
+  - CantHearYou
+  - ChangeColour
   - ClickRpc
   - DestroyRpc
+  - HeresWhy
   - DestroySpaceship
   - Fire
-  - RespawnSpaceship
-  - PauseVideoRPC
-  - PlayVideoRPC
-  - ResumeVideoRPC
-  - StopVideoRPC
+  - isLocalPlayer
   - PlayVideo
+  - RespawnSpaceship
   - StopVideo
   - TogglePause
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1

@@ -25,7 +25,28 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "ButtonInvoker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "CardboardStartup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ChangeColor",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ChangeName",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -40,6 +61,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "CubeColorController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "CustomTeleporter",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -63,8 +91,37 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.FirstPersonController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.Highlighter",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.OrthographicController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitGames.Demos.DemoPunVoice.ThirdPersonController",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -72,6 +129,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -109,6 +167,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -132,6 +191,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -148,6 +208,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -257,6 +318,48 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "PhotonUnityNetworking.Utilities.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.UtilityScripts.MoveByKeys",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.PUN.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.PUN.PhotonVoiceView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.PUN.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.PUN.PunVoiceClient",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.Recorder",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.Speaker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.VoiceLogger",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "PickedUp",
@@ -267,6 +370,20 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "PlayerSetup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PointersController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ProximityVoiceTrigger",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -304,6 +421,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -312,6 +430,13 @@
             "nativeClass": "ShaderNameRegistry",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "StartGameButton",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -369,7 +494,7 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -399,6 +524,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -450,7 +576,7 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -459,7 +585,16 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimatorOverrideController",
+            "fullManagedTypeName": "UnityEngine.AnimatorOverrideController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -468,6 +603,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -477,6 +613,7 @@
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -486,6 +623,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -495,6 +633,7 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -504,7 +643,7 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -513,6 +652,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -522,6 +662,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -531,6 +672,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -540,6 +682,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -549,7 +692,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasGroup",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -558,6 +701,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -567,6 +711,7 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -576,6 +721,7 @@
             "fullManagedTypeName": "UnityEngine.CharacterController",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -585,6 +731,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -594,6 +741,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -603,6 +751,7 @@
             "fullManagedTypeName": "UnityEngine.ComputeShader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -612,6 +761,7 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -649,6 +799,7 @@
             "fullManagedTypeName": "UnityEngine.FlareLayer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -658,6 +809,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -667,8 +819,51 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputActionAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputActionReference",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputSystemObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.RemoteInputPlayerConnection",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.UI.InputSystemUIInputModule",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -676,6 +871,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -694,6 +890,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -703,6 +900,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -712,6 +910,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -721,6 +920,7 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -730,6 +930,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -739,6 +940,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -748,6 +950,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -757,7 +960,7 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -766,6 +969,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -775,6 +979,7 @@
             "fullManagedTypeName": "UnityEngine.ParticleSystem",
             "moduleName": "ParticleSystem",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -784,6 +989,7 @@
             "fullManagedTypeName": "UnityEngine.ParticleSystemRenderer",
             "moduleName": "ParticleSystem",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -800,6 +1006,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -809,6 +1016,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -860,6 +1068,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -869,6 +1078,7 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -878,7 +1088,7 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -887,6 +1097,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -896,6 +1107,7 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -912,7 +1124,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Project.unity"
+                "Assets/Scenes/Load.unity"
             ]
         },
         {
@@ -921,6 +1133,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -930,6 +1143,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -939,6 +1153,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -948,6 +1163,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -957,6 +1173,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/Load.unity",
                 "Assets/Scenes/Project.unity"
             ]
         },
@@ -985,6 +1202,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.RawImage",
             "moduleName": "",
             "usedInScenes": []
         },
