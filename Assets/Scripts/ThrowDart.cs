@@ -32,23 +32,25 @@ public class ThrowDart : MonoBehaviour
         {
             if (collision.gameObject.CompareTag(dartBoardTag))
             {
-                FreezePosition();
-                
-                // Calculate the vector from the center of the collided object to the contact point
-                Vector3 vectorToContactPoint = contact.point - collision.transform.position;
-                    
-                // Calculate the Euclidean distance (magnitude) of the vector
-                if(!onBoard)
+                if(transform.parent == null)
                 {
-                    onBoard = true;
+                    FreezePosition();
+                    
+                    // Calculate the vector from the center of the collided object to the contact point
+                    Vector3 vectorToContactPoint = contact.point - collision.transform.position;
+                        
+                    // Calculate the Euclidean distance (magnitude) of the vector
+                    if(!onBoard)
+                    {
+                        onBoard = true;
 
-                    float distance = vectorToContactPoint.magnitude;
+                        float distance = vectorToContactPoint.magnitude;
 
-                    // Debug.Log("Distance from center to collision point: " + distance);
+                        // Debug.Log("Distance from center to collision point: " + distance);
 
-                    collision.gameObject.GetComponent<DartScoreSystem>().UpdateScore(distance);
+                        collision.gameObject.GetComponent<DartScoreSystem>().UpdateScore(distance);
+                    }
                 }
-
             }
         }
         

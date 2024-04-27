@@ -44,7 +44,7 @@ public class RayCastPointer : MonoBehaviour
         lineRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
         charMovement = Character.GetComponent<CharacterMovement>();
-         dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
+        dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
 
     }
 
@@ -137,7 +137,7 @@ public class RayCastPointer : MonoBehaviour
                 }
             }
 
-            if(hitObject.tag == "Outline Objects" && Input.GetButtonDown("js2"))
+            if(hitObject.tag == "Outline Objects" && Input.GetKey(KeyCode.X)) //Input.GetButtonDown("js2")
             {
                 if(hitObject.GetComponent<PickedUp>() != null && !hitObject.name.Contains("dart"))
                 {
@@ -153,9 +153,9 @@ public class RayCastPointer : MonoBehaviour
             }
 
             // Dart Spawn in Hand
-            if(hitObject.name == "Dart_Table" && Input.GetButtonDown("js2"))
+            if(hitObject.name == "Dart_Table" && Input.GetKey(KeyCode.X))
             {
-                if(dartScoreSystem.currentDarts > 0)
+                if(dartScoreSystem.currentDarts > 0 && !DartInHand(HandPivot.transform))
                 {
                     newDart = (GameObject)Instantiate(Dart);
                     
@@ -165,8 +165,10 @@ public class RayCastPointer : MonoBehaviour
                         newDart.GetComponent<Rigidbody>().useGravity = false;
                     }
 
+                    maxRayDistance = 1f;
+
                     newDart.GetComponent<PickedUp>().pickedUp = true;
-                    newDart.transform.position = rayEnd;
+                    newDart.transform.position = handPosition + handForward * maxRayDistance;
                 }
             }
 
@@ -226,5 +228,21 @@ public class RayCastPointer : MonoBehaviour
                 outlineComponent.enabled = false;
             }
         }
+    }
+    // Method to check if Dart is already in Hand
+    public bool DartInHand(Transform parent)
+    {
+        // Iterate through each child transform
+        for (int i = 0; i < parent.childCount; i++)
+        {
+            Transform child = parent.GetChild(i);
+            GameObject childObject = child.gameObject;
+
+            if(childObject.name.Contains("dart") && childObject.name.Contains("(Clone)"))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PickedUp : MonoBehaviour
 {
@@ -14,10 +16,19 @@ public class PickedUp : MonoBehaviour
 
     private Rigidbody rb;
 
+    private DartScoreSystem dartScoreSystem;
+    public GameObject Raycast;
+    private RayCastPointer rayCastPointer;
+    private TextMeshProUGUI DartsLeft;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
+        rayCastPointer = Raycast.GetComponent<RayCastPointer>();
+        DartsLeft = GameObject.Find("DartsLeft").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -31,7 +42,7 @@ public class PickedUp : MonoBehaviour
 
             Freeze();
 
-            if(Input.GetButtonDown("js5"))
+            if(Input.GetKey(KeyCode.B))
             {
                 transform.SetParent(null);
                 rb.useGravity = true;
@@ -53,6 +64,17 @@ public class PickedUp : MonoBehaviour
                 {
                     Unfreeze();
                 }
+
+                // Update Dart score
+                dartScoreSystem.currentDarts = dartScoreSystem.currentDarts - 1;
+                DartsLeft.text = "Darts Left : " + dartScoreSystem.currentDarts.ToString();
+
+                GetComponent<AvatarLookAt>().enabled = false;
+                gameObject.tag = "Untagged";
+                GetComponent<Outline>().enabled = true;
+
+                // reset raycast length
+                rayCastPointer.maxRayDistance = 10f;
             }
         }
 

@@ -48,9 +48,9 @@ public class DartScoreSystem : MonoBehaviour
         distance = 100 * distance;
         dartScore += 200 - (int)distance;
 
-        currentDarts = currentDarts - 1;
+        // currentDarts = currentDarts - 1;
 
         DartScore.text = "Score : " + dartScore.ToString();
-        DartsLeft.text = "Darts Left : " + currentDarts.ToString();
+        // DartsLeft.text = "Darts Left : " + currentDarts.ToString();
     }
 }
