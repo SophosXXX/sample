@@ -6,6 +6,8 @@ TagManager:
   tags:
   - DartBoard
   - Outline Objects
+  - ToBeDestroyed
+  - Basketball
   layers:
   - Default
   - TransparentFX

@@ -30,23 +30,23 @@ public class DartScoreSystem : MonoBehaviour
 
         dartScore = 0;
         currentDarts = 5;
-        GameObject[] outlineObjects = GameObject.FindGameObjectsWithTag("Outline Objects");
+        GameObject[] board_objects = GameObject.FindGameObjectsWithTag("ToBeDestroyed");
 
-        foreach(GameObject outlineObject in outlineObjects)
+        foreach(GameObject board_object in board_objects)
         {
-            if(outlineObject.name.Contains("dart") && outlineObject.name.Contains("(Clone)"))
+            if(board_object.name.Contains("dart") && board_object.name.Contains("(Clone)"))
             {
-                Destroy(outlineObject);
+                Destroy(board_object);
             }
         }
         DartScore.text = "Score : 0";
         DartsLeft.text = "Darts Left : 5";
     }
 
-    public void UpdateScore(float distance)
+    public void UpdateScore(float distance, float scale)
     {
         distance = 100 * distance;
-        dartScore += 200 - (int)distance;
+        dartScore = dartScore + Mathf.RoundToInt((200 - distance)/scale);
 
         // currentDarts = currentDarts - 1;
 

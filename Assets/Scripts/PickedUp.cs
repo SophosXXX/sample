@@ -21,6 +21,8 @@ public class PickedUp : MonoBehaviour
     private RayCastPointer rayCastPointer;
     private TextMeshProUGUI DartsLeft;
 
+    private BasketballScoreSystem basketballScoreSystem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,8 @@ public class PickedUp : MonoBehaviour
         dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
         rayCastPointer = Raycast.GetComponent<RayCastPointer>();
         DartsLeft = GameObject.Find("DartsLeft").GetComponent<TextMeshProUGUI>();
+
+        basketballScoreSystem = GameObject.Find("basketball_hoop").GetComponent<BasketballScoreSystem>();
     }
 
     // Update is called once per frame
@@ -44,6 +48,11 @@ public class PickedUp : MonoBehaviour
 
             if(Input.GetKey(KeyCode.B))
             {
+                if(gameObject.name.Contains("basketball"))
+                {
+                    basketballScoreSystem.Basketball_StartPosition = gameObject.transform;
+                }
+                
                 transform.SetParent(null);
                 rb.useGravity = true;
 
@@ -65,13 +74,16 @@ public class PickedUp : MonoBehaviour
                     Unfreeze();
                 }
 
-                // Update Dart score
-                dartScoreSystem.currentDarts = dartScoreSystem.currentDarts - 1;
-                DartsLeft.text = "Darts Left : " + dartScoreSystem.currentDarts.ToString();
+                if (gameObject.name.Contains("dart"))
+                {
+                    // Update Dart score
+                    dartScoreSystem.currentDarts = dartScoreSystem.currentDarts - 1;
+                    DartsLeft.text = "Darts Left : " + dartScoreSystem.currentDarts.ToString();
 
-                GetComponent<AvatarLookAt>().enabled = false;
-                gameObject.tag = "Untagged";
-                GetComponent<Outline>().enabled = true;
+                    GetComponent<AvatarLookAt>().enabled = false;
+                    gameObject.tag = "ToBeDestroyed";
+                    GetComponent<Outline>().enabled = true;
+                }
 
                 // reset raycast length
                 rayCastPointer.maxRayDistance = 10f;

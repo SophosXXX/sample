@@ -74,18 +74,18 @@ public class RayCastPointer : MonoBehaviour
         {
             rayPivot = rayEnd;
 
-            Debug.Log(rayPivot);
+            // Debug.Log(rayPivot);
             // If the ray hits something, set the end position of the line to the point of intersection
             lineRenderer.SetPosition(0, handPosition);
             lineRenderer.SetPosition(1, hit.point);
 
             // Detect which object the end of the line touches
             GameObject hitObject = hit.collider.gameObject;
-            Debug.Log("Hit Object: " + hitObject.name);
+            // Debug.Log("Hit Object: " + hitObject.name);
 
             if (hitObject.GetComponent<Graphic>() != null)
             {
-                Debug.Log("UI Element Hit: " + hitObject.name);
+                // Debug.Log("UI Element Hit: " + hitObject.name);
                 // You can perform UI-specific actions here
             }
 
@@ -149,6 +149,11 @@ public class RayCastPointer : MonoBehaviour
 
                     hitObject.GetComponent<PickedUp>().pickedUp = true;
                     hitObject.transform.position = rayEnd;
+
+                    maxRayDistance = 1f;
+
+                    hitObject.GetComponent<PickedUp>().pickedUp = true;
+                    hitObject.transform.position = handPosition + handForward * maxRayDistance;
                 }
             }
 
@@ -228,6 +233,8 @@ public class RayCastPointer : MonoBehaviour
                 outlineComponent.enabled = false;
             }
         }
+
+        maxRayDistance = 10f;
     }
     // Method to check if Dart is already in Hand
     public bool DartInHand(Transform parent)

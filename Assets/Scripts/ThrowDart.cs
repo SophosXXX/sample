@@ -11,6 +11,11 @@ public class ThrowDart : MonoBehaviour
     public float force = 1000f;
     public string dartBoardTag = "DartBoard";
 
+    private GameObject DartHitSphere;
+    private GameObject new_hitsphere;
+
+    private DartScoreSystem dartScoreSystem;
+
     // private bool hasCollided = false;
 
     // Start is called before the first frame update
@@ -18,6 +23,10 @@ public class ThrowDart : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         // rb.AddForce(transform.forward * force);
+
+        DartHitSphere = GameObject.Find("dartHitSphere");
+
+        dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
     }
 
     // Update is called once per frame
@@ -42,13 +51,19 @@ public class ThrowDart : MonoBehaviour
                     // Calculate the Euclidean distance (magnitude) of the vector
                     if(!onBoard)
                     {
+                        new_hitsphere = (GameObject)Instantiate(DartHitSphere);
+                        new_hitsphere.transform.position = new Vector3(contact.point.x, contact.point.y, contact.point.z);
+                        new_hitsphere.transform.SetParent(collision.gameObject.transform);
+
+                        transform.SetParent(new_hitsphere.transform);
+
                         onBoard = true;
 
                         float distance = vectorToContactPoint.magnitude;
 
                         // Debug.Log("Distance from center to collision point: " + distance);
 
-                        collision.gameObject.GetComponent<DartScoreSystem>().UpdateScore(distance);
+                        dartScoreSystem.GetComponent<DartScoreSystem>().UpdateScore(distance, collision.gameObject.transform.localScale.x);
                     }
                 }
             }
