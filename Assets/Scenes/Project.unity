@@ -275,6 +275,10 @@ PrefabInstance:
       value: /Assets/Videos/Nature.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 3149734743521048181, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18999961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149734743521048181, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 1.5000001
       objectReference: {fileID: 0}
@@ -289,6 +293,10 @@ PrefabInstance:
     - target: {fileID: 3149734743721059825, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_LocalScale.z
       value: -0.018069556
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149734743721059825, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18999961
       objectReference: {fileID: 0}
     - target: {fileID: 3149734743721059825, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -321,6 +329,10 @@ PrefabInstance:
     - target: {fileID: 3149734743721059826, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149734744138138736, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 3149734744138138736, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -365,6 +377,10 @@ PrefabInstance:
     - target: {fileID: 3149734744694506528, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_LocalScale.z
       value: -0.018069556
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149734744694506528, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18999961
       objectReference: {fileID: 0}
     - target: {fileID: 3149734744694506528, guid: 48d7b612924da408484d00d0028c14d5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -491,7 +507,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44888
+  m_Name: pb_Mesh25916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11514,7 +11530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d63ddf730594af3bf7f64c7df2c908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3346063550712515795, guid: 49b4725c2f2cc4ebd9d42cc532919460, type: 3}
+  playerPrefab: {fileID: 3346063550712515795, guid: 49b4725c2f2cc4ebd9d42cc532919460, type: 3}
   spawnPoint: {fileID: 614922290}
 --- !u!4 &1763730024
 Transform:
@@ -11575,7 +11591,7 @@ MonoBehaviour:
   frameDuration: 20000
   bitrate: 30000
   sourceType: 0
-  microphoneType: 0
+  microphoneType: 1
   audioClip: {fileID: 0}
   loopAudioClip: 1
   recordingEnabled: 1
@@ -12201,7 +12217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: ddd95aa4817356645979f7a136313957, type: 3}
       propertyPath: m_Volume
-      value: 0.12
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: ddd95aa4817356645979f7a136313957, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: ddd95aa4817356645979f7a136313957, type: 3}
       propertyPath: rolloffMode
@@ -12212,12 +12232,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8200002, guid: ddd95aa4817356645979f7a136313957, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: ddd95aa4817356645979f7a136313957, type: 3}
       propertyPath: MaxDistance
       value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 8200002, guid: ddd95aa4817356645979f7a136313957, type: 3}
       propertyPath: rolloffMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ddd95aa4817356645979f7a136313957, type: 3}
+      propertyPath: teleportSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ddd95aa4817356645979f7a136313957, type: 3}
+      propertyPath: teleportPadSound
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd95aa4817356645979f7a136313957, type: 3}

@@ -46,6 +46,9 @@ MonoBehaviour:
   - RespawnSpaceship
   - StopVideo
   - TogglePause
+  - SyncCameraRotation
+  - Color
+  - SetColor
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

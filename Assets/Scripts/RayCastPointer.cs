@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using Photon.Pun;
 
-public class RayCastPointer : MonoBehaviour
+public class RayCastPointer : MonoBehaviourPun
 {
     public float maxRayDistance = 10f; // Maximum length of the ray trace line
 

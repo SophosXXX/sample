@@ -40,6 +40,8 @@ public class VideoPlayerController : MonoBehaviourPunCallbacks
     {
         // Load and play the specified video clip
         VideoClip clipToPlay = null;
+        toggleVisibility();
+
         if (clipName == videoClip1.name)
         {
             clipToPlay = videoClip1;
@@ -53,9 +55,9 @@ public class VideoPlayerController : MonoBehaviourPunCallbacks
         {
             videoPlayer.clip = clipToPlay;
             videoPlayer.Play();
+            toggleVisibility();
         }
-        isCanvasVisible = !isCanvasVisible;
-        uiCanvas.gameObject.SetActive(isCanvasVisible);
+
     }
 
     [PunRPC]
@@ -89,12 +91,14 @@ public class VideoPlayerController : MonoBehaviourPunCallbacks
             if (isMouseOverQuad && Input.GetButtonDown("js2")) // Check for 'x' key press
             {
                 // Toggle the canvas visibility
-                isCanvasVisible = !isCanvasVisible;
-                uiCanvas.gameObject.SetActive(isCanvasVisible);
+                toggleVisibility();
             }
         }
     }
-
+    public void toggleVisibility(){
+        isCanvasVisible = !isCanvasVisible;
+        uiCanvas.gameObject.SetActive(isCanvasVisible);
+    }
     public void OnMouseEnterQuad()
     {
         isMouseOverQuad = true;
