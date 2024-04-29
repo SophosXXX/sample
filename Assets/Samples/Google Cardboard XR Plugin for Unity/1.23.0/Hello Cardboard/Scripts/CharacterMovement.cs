@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviourPun
 {
     CharacterController charCntrl;
     [Tooltip("The speed at which the character will move.")]
-    public float speed = 5f;
+    public float speed = 7f;
     [Tooltip("The camera representing where the character is looking.")]
     public GameObject cameraObj;
     [Tooltip("Should be checked if using the Bluetooth Controller to move. If using keyboard, leave this unchecked.")]

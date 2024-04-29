@@ -46,7 +46,7 @@ public class PickedUp : MonoBehaviour
 
             Freeze();
 
-            if(Input.GetKey(KeyCode.B))
+            if(Input.GetButtonDown("js5"))
             {
                 if(gameObject.name.Contains("basketball"))
                 {
@@ -86,7 +86,7 @@ public class PickedUp : MonoBehaviour
                 }
 
                 // reset raycast length
-                rayCastPointer.maxRayDistance = 10f;
+                rayCastPointer.maxRayDistance = rayCastPointer.raycast_length;
             }
         }
 

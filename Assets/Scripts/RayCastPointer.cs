@@ -6,7 +6,8 @@ using System;
 
 public class RayCastPointer : MonoBehaviour
 {
-    public float maxRayDistance = 10f; // Maximum length of the ray trace line
+    public float raycast_length = 3f;
+    public float maxRayDistance; // Maximum length of the ray trace line
 
     private LineRenderer lineRenderer;
     public GameObject Hand;
@@ -45,6 +46,8 @@ public class RayCastPointer : MonoBehaviour
 
         charMovement = Character.GetComponent<CharacterMovement>();
         dartScoreSystem = GameObject.Find("DartScoreSystem").GetComponent<DartScoreSystem>();
+
+        maxRayDistance = raycast_length;
 
     }
 
@@ -137,7 +140,7 @@ public class RayCastPointer : MonoBehaviour
                 }
             }
 
-            if(hitObject.tag == "Outline Objects" && Input.GetKey(KeyCode.X)) //Input.GetButtonDown("js2")
+            if(hitObject.tag == "Outline Objects" && Input.GetButtonDown("js5")) //Input.GetButtonDown("js2")
             {
                 if(hitObject.GetComponent<PickedUp>() != null && !hitObject.name.Contains("dart"))
                 {
@@ -158,7 +161,7 @@ public class RayCastPointer : MonoBehaviour
             }
 
             // Dart Spawn in Hand
-            if(hitObject.name == "Dart_Table" && Input.GetKey(KeyCode.X))
+            if(hitObject.name == "Dart_Table" && Input.GetButtonDown("js2"))
             {
                 if(dartScoreSystem.currentDarts > 0 && !DartInHand(HandPivot.transform))
                 {
@@ -175,6 +178,11 @@ public class RayCastPointer : MonoBehaviour
                     newDart.GetComponent<PickedUp>().pickedUp = true;
                     newDart.transform.position = handPosition + handForward * maxRayDistance;
                 }
+            }
+            // drop the dart if you dont want to throw it
+            if(DartInHand(HandPivot.transform) && Input.GetButtonDown("js10"))
+            {
+                Destroy(newDart);
             }
 
             // Reset Dart Game

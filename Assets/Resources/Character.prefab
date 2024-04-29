@@ -1966,6 +1966,7 @@ GameObject:
   - component: {fileID: 2762202611867444987}
   - component: {fileID: 8324009049985015476}
   - component: {fileID: 5782746222196675676}
+  - component: {fileID: 5734281792124567059}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2024,7 +2025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1ae413c1be9b40ade6253e39620c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   cameraObj: {fileID: 5426423656765569852}
   joyStickMode: 0
 --- !u!114 &8070642248383895708
@@ -2095,6 +2096,21 @@ MonoBehaviour:
   force: 1000
   basketballScore: 0
   BasketballScore: {fileID: 0}
+--- !u!114 &5734281792124567059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3346063550712515795}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d83a9ac59065249a7e89c17acc58b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 5426423656765569852}
+  Character: {fileID: 3346063550712515795}
+  Menu: {fileID: 0}
 --- !u!1 &3453052695382230865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,6 +2927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234217a3799c8974b9e14f078ba80c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raycast_length: 7
   maxRayDistance: 5
   Hand: {fileID: 7123295136999998744}
   HandPivot: {fileID: 3346063550259611046}

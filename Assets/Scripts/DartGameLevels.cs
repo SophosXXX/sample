@@ -19,10 +19,6 @@ public class DartGameLevels : MonoBehaviour
     public GameObject largeBoard;
 
     public int levelNumber = 0;
-
-    private bool Level1Active = false;
-    private bool Level2Active = false;
-    private bool Level3Active = false;
  
     void Start()
     {
